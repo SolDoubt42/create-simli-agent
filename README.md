@@ -4,7 +4,7 @@ This starter is an example of how to create a composable Simli AI Agent that run
  ## Usage
  ### 1. Rename .env_sample to .env and paste your API key: [SIMLI-API-KEY](https://app.simli.com/)
 ```js
-NEXT_PUBLIC_SIMLI_API_KEY="SIMLI-API-KEY"
+NEXT_PUBLIC_SIMLI_API_KEY="p30qidjs1pgppyxx6zznr"
 ```
 
 ### 2. Insall packages

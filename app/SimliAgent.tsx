@@ -38,19 +38,19 @@ const SimliAgent: React.FC<SimliAgentProps> = ({ onStart, onClose }) => {
     const response = await fetch("https://api.simli.ai/startE2ESession", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+          "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        apiKey: SIMLI_API_KEY,
-        faceId: "",
-        voiceId: "",
-        firstMessage: "",
-        systemPrompt: "",
+          apiKey: SIMLI_API_KEY,
+          faceId: "025f2f16-31f0-4fa8-9ceb-5adbaf173166",
+          voiceId: "ea7413fa-81dd-4280-b911-e680e75294cb",
+          firstMessage: "I am Donald trump President of the united states of America and this is the official Trump AI Coin. Ask me anything you like",
+          systemPrompt: "Donald J Trump",
       }),
-    });
-
-    const data = await response.json();
-    const roomUrl = data.roomUrl;
+      })
+  
+  const data = await response.json();
+  const roomUrl = data.roomUrl;
 
     /**********************************/
     
